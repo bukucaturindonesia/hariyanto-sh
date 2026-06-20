@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id="beranda"
-      className="relative isolate overflow-hidden bg-ocean-radial pt-28 text-white sm:pt-32"
+      className="relative isolate overflow-hidden bg-ocean-radial pt-16 text-white sm:pt-20"
     >
       <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(90deg,#fff_1px,transparent_1px),linear-gradient(#fff_1px,transparent_1px)] [background-size:56px_56px]" />
       <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-slate-50 to-transparent" />

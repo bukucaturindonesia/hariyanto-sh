@@ -1,5 +1,10 @@
-import { MessageCircle } from "lucide-react";
-import { buildWhatsAppUrl, whatsappMessage } from "@/lib/site";
+import { MapPin, MessageCircle } from "lucide-react";
+import {
+  buildWhatsAppUrl,
+  mapsUrl,
+  officeAddress,
+  whatsappMessage,
+} from "@/lib/site";
 
 export function FinalCTA() {
   return (
@@ -30,9 +35,18 @@ export function FinalCTA() {
           <MessageCircle className="h-4 w-4" aria-hidden />
           Hubungi via WhatsApp
         </a>
-        <p className="mt-5 text-sm font-medium text-white/72">
-          +62 821-8892-1227
-        </p>
+        <div className="mt-6 flex flex-col items-center justify-center gap-3 text-sm font-medium text-white/76 sm:flex-row sm:gap-6">
+          <p>+62 821-8892-1227</p>
+          <a
+            href={mapsUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center gap-2 transition hover:text-gold-300"
+          >
+            <MapPin className="h-4 w-4 text-gold-300" aria-hidden />
+            {officeAddress}
+          </a>
+        </div>
       </div>
     </section>
   );

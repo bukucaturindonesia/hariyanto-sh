@@ -1,6 +1,8 @@
 export const whatsappNumber = "6282188921227";
 export const whatsappMessage =
   "Halo Bapak Haryanto, saya ingin konsultasi hukum.";
+export const officeAddress = "Jln. Datuk Ditiro No. 29 Makassar";
+export const mapsUrl = "https://maps.app.goo.gl/rwnje1DydAVfGPL67";
 
 export const navItems = [
   { label: "Beranda", href: "#beranda" },

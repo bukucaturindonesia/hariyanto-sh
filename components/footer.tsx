@@ -1,5 +1,11 @@
-import { MessageCircle, Scale } from "lucide-react";
-import { buildWhatsAppUrl, navItems, whatsappMessage } from "@/lib/site";
+import { MapPin, MessageCircle, Scale } from "lucide-react";
+import {
+  buildWhatsAppUrl,
+  mapsUrl,
+  navItems,
+  officeAddress,
+  whatsappMessage,
+} from "@/lib/site";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -26,6 +32,15 @@ export function Footer() {
             nasihat hukum resmi. Hubungan advokat dan klien berlaku setelah
             adanya konsultasi dan kesepakatan pendampingan.
           </p>
+          <a
+            href={mapsUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-5 inline-flex max-w-md items-start gap-2 text-sm leading-6 text-white/72 transition hover:text-gold-300"
+          >
+            <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold-300" aria-hidden />
+            <span>{officeAddress}</span>
+          </a>
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-[1fr_auto]">
